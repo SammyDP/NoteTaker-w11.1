@@ -13,7 +13,6 @@ app.use(express.static('public'));
 
 app.get("/notes", (req, res) => {
     data = path.join(__dirname, "./public/notes.html");
-    //pulls second HTML page and renders
     res.sendFile(data);
   });
 
