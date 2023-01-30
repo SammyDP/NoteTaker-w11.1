@@ -47,7 +47,7 @@
 
 <h2 align="center">
 Deployed on Heroku
-<img src="https://user-images.githubusercontent.com/107449948/206048392-83d98869-db54-4c1f-9ff1-db44f61634f2.png">
+<img src="https://user-images.githubusercontent.com/107449948/215538277-706ea04e-aebc-447c-a34b-c02888e6dfc0.jpg">
 <p>&nbsp;</p>
 
 # Technology
