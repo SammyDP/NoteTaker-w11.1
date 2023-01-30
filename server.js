@@ -16,8 +16,21 @@ app.get("/notes", (req, res) => {
     res.sendFile(data);
   });
 
+app.get("/notes", (req, res) => {
+  fs.readFile("./db/db.json", (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const jsonData = JSON.parse(data);
+    // console.log(jsonData);
+    res.json(jsonData);
+  });
+});
 
+// Need to add post route, think i need uuid
 
+// Need to add delete route
 
     
 app.listen(PORT, () => console.log(`listening on port ${PORT}!`));
