@@ -2,7 +2,7 @@
 
 <h1 align="center">
 
-[Note Taker]()
+[Note Taker](https://notes-w.herokuapp.com)
 
 </h1>
 
@@ -58,7 +58,7 @@ Deployed on Heroku
 
 # Links
 
-[Heroku Deployment]()
+[Heroku Deployment](https://notes-w.herokuapp.com)
 
 <p>&nbsp;</p>
 
