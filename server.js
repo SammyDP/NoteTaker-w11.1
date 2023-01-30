@@ -11,6 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+// get the notes
+app.get("/api/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "./db/db.json"))
+});
 
 // connecting home page
 app.get("/", function (req, res) {
@@ -21,10 +25,6 @@ app.get("/notes", function (req, res) {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
-// get the notes
-app.get("/api/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./db/db.json"))
-});
 
 
     
