@@ -11,19 +11,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-// get the notes
-app.get("/api/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./db/db.json"))
-});
+app.get("/notes", (req, res) => {
+    data = path.join(__dirname, "./public/notes.html");
+    res.sendFile(data);
+  });
 
-// connecting home page
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
-
-app.get("/notes", function (req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
 
 
 
